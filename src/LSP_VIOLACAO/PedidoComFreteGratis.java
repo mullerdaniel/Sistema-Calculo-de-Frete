@@ -12,7 +12,7 @@ public class PedidoComFreteGratis extends Pedido {
 // Se o valorFrete passado for maior que 0, o método *deveria* aumentar o
 // valor final, mas, em vez disso, zera o frete, quebrando a expectativa
 // do código cliente de que a chamada a este método seja cumulativa/positiva.
-    @Overridegit
+    @Override
     public void aplicarFrete(double valorFrete) {
 // A regra de frete grátis sobrescreve a lógica da superclasse,
 // garantindo que o valorFinal permaneça igual ao valorBruto.
